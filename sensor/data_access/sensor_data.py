@@ -19,7 +19,6 @@ class SensorData:
         """
         try:
             self.mongo_client = MongoDBClient(database_name=DATABASE_NAME)
-
         except Exception as e:
             raise SensorException(e, sys)
 
